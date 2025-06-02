@@ -1,24 +1,31 @@
+import './App.css'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
 import Navbar from './components/Navbar'
 import Socials from './components/Socials'
 import Techstack from './components/Techstack'
+import {motion} from 'framer-motion'
 
 function App() {
 
   return (
     <>
-      <div className='bg-black theme flex flex-col items-center gap-10 h-full text-white'>
-          <Navbar />
-          <div className='text-8xl font-bold py-50 flex flex-col items-center gap-5'>
+      <motion.div  className='bg-black theme flex flex-col h-full text-white py-6' >
+        <motion.span initial ={{opacity:0, y:0}} animate ={{opacity:1, y:20}}transition={{duration:0.5, delay:0.5}}  ><Navbar  /></motion.span>
+        <motion.div initial ={{opacity:0, y:0}} animate ={{opacity:1, y:20}}transition={{duration:0.5, delay:1}}>
+          <div className='text-8xl font-bold py-25 flex flex-col items-center gap-5'>
           <h1>Alwin Santhosh</h1>
-          <h2 className='text-3xl p-5'>Sophmore @ NIT Calicut CSE</h2>
+          <h2 className='text-3xl p-5  '>Sophmore @ NIT Calicut CSE</h2>
+          <motion.div className = '' initial ={{opacity:0, y:0}} animate ={{opacity:1, y:20}}transition={{duration:0.5, delay:1}}>
           <Socials /> 
           <Techstack />
+          </motion.div>
+         
           </div>
-      </div>
+        </motion.div >
+          
+      </motion.div>
     </>
   )
 }
