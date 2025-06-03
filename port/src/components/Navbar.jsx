@@ -5,9 +5,9 @@ import '../App.css';
 function Navbar() {
 
     return(
-        <div className="bg-black text-white  py-5 text-3xl flex justify-center items-center w- gap-10">
+        <div className="bg-black text-white text-xl flex justify-around items-center w-full gap-5 ">
             <Link to="/" className=" font-bold hover:text-gray-400" >Home</Link>
-            <Link to="/about" className="text-white font-bold hover:text-gray-400 ">About Me</Link>
+            <Link to="/about" className="text-white font-bold hover:text-gray-400">About Me</Link>
             <Link to="/projects" className="text-white font-bold hover:text-gray-400 ">Projects</Link>
             <Link to="/experience" className="text-white font-bold hover:text-gray-400 ">Experience</Link>
         </div>
