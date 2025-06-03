@@ -10,14 +10,15 @@ import {motion} from 'framer-motion'
 function App() {
 
   return (
-    <>
-      <motion.div  className='bg-black theme flex flex-col items-center h-screen w-full text-white py-7 text-5xl md:text-8xl' >
+   
+      <div className='bg-black h-screen'>
+      <motion.div  className=' theme flex flex-col gap-10 items-center w-full text-white text-5xl md:text-8xl overflow-hidden' >
         <motion.span initial ={{opacity:0, y:0}} animate ={{opacity:1, y:20}}transition={{duration:0.5, delay:0.5}}  ><Navbar  /></motion.span>
         <motion.div initial ={{opacity:0, y:0}} animate ={{opacity:1, y:20}}transition={{duration:0.5, delay:1}}>
-          <div className='  font-bold py-25 flex flex-col items-center gap-5 '>
+          <div className='font-bold py-20 flex flex-col justify-between items-center gap-5 '>
           <h1>Alwin Santhosh</h1>
-          <h2 className='text-3xl p-5  '>Sophmore @ NIT Calicut CSE</h2>
-          <motion.div className = '' initial ={{opacity:0, y:0}} animate ={{opacity:1, y:20}}transition={{duration:0.5, delay:1}}>
+          <h2 className='text-3xl  '>Sophmore @ NIT Calicut CSE</h2>
+          <motion.div  initial ={{opacity:0, y:0}} animate ={{opacity:1, y:20}}transition={{duration:0.5, delay:1}}>
           <Socials /> 
           <Techstack />
           </motion.div>
@@ -26,7 +27,9 @@ function App() {
         </motion.div >
           
       </motion.div>
-    </>
+      </div>
+     
+  
   )
 }
 
