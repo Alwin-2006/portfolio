@@ -6,7 +6,7 @@ import { Route, RouterProvider,createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio/port/",
+    path: "/",
     element: <App />,
   },
   
