@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <motion.div  className='bg-black theme flex flex-col h-full text-white py-6' >
+      <motion.div  className='bg-black theme flex flex-col h-full w-full text-white py-6' >
         <motion.span initial ={{opacity:0, y:0}} animate ={{opacity:1, y:20}}transition={{duration:0.5, delay:0.5}}  ><Navbar  /></motion.span>
         <motion.div initial ={{opacity:0, y:0}} animate ={{opacity:1, y:20}}transition={{duration:0.5, delay:1}}>
           <div className='text-8xl font-bold py-25 flex flex-col items-center gap-5'>
